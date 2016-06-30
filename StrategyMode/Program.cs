@@ -9,6 +9,12 @@ namespace StrategyMode
     {
         static void Main(string[] args)
         {
+            CashContext csuper = new CashContext("0.8");
+            double totalPrices = 0d;
+            totalPrices = csuper.GetResult(20*20);
+
+            Console.WriteLine(totalPrices);
+            Console.ReadKey();
         }
     }
 }
